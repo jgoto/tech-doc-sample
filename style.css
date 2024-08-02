@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    gap: 32px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.navigation {
+    flex: 1;
+}
+
+.navigation h1{
+    text-align: center;
+}
+
+.navigation ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li{
+    list-style-type: none;
+}
+
+.navigation a{
+    text-decoration: none;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    max-width: 75%;
+}
