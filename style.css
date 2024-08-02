@@ -1,15 +1,19 @@
 body{
     display: flex;
-    gap: 32px;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .navigation {
     flex: 1;
+    position: sticky;
+    top: 0;
+    margin-bottom: auto;
 }
 
 .navigation h1{
     text-align: center;
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .navigation ul, li{
@@ -19,14 +23,47 @@ body{
 
 .navigation li{
     list-style-type: none;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 16px;
 }
 
 .navigation a{
     text-decoration: none;
+    color: gray;
 }
 
 .content{
     display: flex;
     flex-direction: column;
     max-width: 75%;
+    margin-left: 0;
+    border-left: 2px solid grey;
+    padding-left: 42px;
+}
+
+.content code{
+    margin: 0;
+    padding: 0;
+}
+
+.content h1{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+p.codeblock{
+    border: 1px solid grey;
+    background-color: #eee;
+    padding: 20px;
+    margin: 0 24px;
+}
+
+.content p, .content li{
+    padding-left: 16px;
+    line-height: 1.5;
+}
+
+.content ul{
+    margin-left: 22px;
 }
