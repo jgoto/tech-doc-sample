@@ -67,3 +67,14 @@ p.codeblock{
 .content ul{
     margin-left: 22px;
 }
+
+header{
+    font-size: 2em;
+}
+
+@media (max-width:400px)
+{
+    body{
+        font-size: smaller;
+    }
+}
